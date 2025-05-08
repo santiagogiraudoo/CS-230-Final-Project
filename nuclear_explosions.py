@@ -2,7 +2,7 @@
 Name:    Santiago Giraudo
 CS230:   Section 5
 Data:    Nuclear Explosions 1945–1998 (nuclear_explosions.csv)
-URL:
+URL:    https://cs-230-final-project-nxtjqhj6gj9zbbekhf2vcz.streamlit.app/
 Description:
 This Streamlit app lets users explore the nuclear_explosions.csv dataset with
 interactive filters for year, month, hemisphere, location, yield, seismic
