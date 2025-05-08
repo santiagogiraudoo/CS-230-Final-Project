@@ -17,6 +17,7 @@ import matplotlib.pyplot as plt
 import pydeck as pdk
 from datetime import date
 
+CSV_FILE_PATH = "/workspaces/CS-230-Final-Project/nuclear_explosions.csv"
 # Defines a function to load and preprocess the nuclear explosions data.
 # Uses Streamlit's caching to improve performance by only reloading data if the underlying file changes.
 @st.cache_data
@@ -24,7 +25,7 @@ def load_data():
     # [PY3]
     # Attempts to read the CSV file into a pandas DataFrame.
     try:
-        df = pd.read_csv("nuclear_explosions.csv")
+        df = pd.read_csv(CSV_FILE_PATH)
     # Handles the case where the CSV file is not found.
     except FileNotFoundError:
         st.error("Error: nuclear_explosions.csv not found. Please ensure the file is in the correct directory.")
